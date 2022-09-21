@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="599.0" prefWidth="883.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quiz.GameController">
+   <children>
+      <ImageView disable="true" fitHeight="611.0" fitWidth="974.0" layoutX="-1.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/1294335_wwtbam_uk_itv_s1_ep0_2018_unit_110_831172.jpeg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="4.0" layoutY="400.0" prefHeight="212.0" prefWidth="905.0">
+         <children>
+            <Line endX="113.5" endY="1.5" layoutX="798.0" layoutY="39.0" startX="1.7928466796875" startY="1.5" stroke="#979696" />
+            <Line endX="99.5" endY="7.0" layoutX="-4.0" layoutY="33.0" startX="-1.0" startY="7.0" stroke="#979696" />
+            <Polygon layoutX="385.0" layoutY="44.0" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 427.5, -4.0, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -290.5, -4.0, -266.5, 10.0" scaleX="1.2" scaleY="1.8" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.05882352963089943" green="0.027450980618596077" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.03921568766236305" blue="0.03921568766236305" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Label fx:id="question" alignment="TOP_CENTER" layoutX="77.0" layoutY="6.0" prefHeight="66.0" prefWidth="754.0" text="Who was the first prime minster of the UK?" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Line endX="113.5" endY="1.5" layoutX="798.0" layoutY="108.0" startX="-6.5" startY="1.5" stroke="#979696" />
+            <Line endX="99.5" endY="7.0" layoutX="-4.0" layoutY="102.0" startX="-1.0" startY="7.0" stroke="#979696" />
+            <Line endX="96.859375" endY="13.5" layoutX="-3.0" layoutY="154.0" startX="-2.0" startY="13.5" stroke="#979696" />
+            <Line endX="117.5" endY="7.0" layoutX="794.0" layoutY="160.0" startX="5.0" startY="7.0" stroke="#979696" />
+            <Polygon fx:id="A" layoutX="206.0" layoutY="115.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 418.9375, -4.0, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -286.3124694824219, -5.5, -266.5, 10.0" scaleX="0.5" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.06018518656492233" green="0.02777777798473835" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.03921568766236305" blue="0.03921568766236305" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Polygon fx:id="B" layoutX="558.0" layoutY="115.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 417.21014404296875, -5.0, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -284.9048767089844, -5.0, -266.5, 10.0" scaleX="0.5" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.04775828495621681" green="0.7368420958518982" blue="0.08221247792243958" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.029999999329447746" green="0.029999999329447746" blue="0.029999999329447746" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Polygon fx:id="C" layoutX="206.0" layoutY="174.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 419.0613708496094, -6.5, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -288.53125, -6.0, -266.5, 10.0" scaleX="0.5" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.06018518656492233" green="0.02777777798473835" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.03921568766236305" blue="0.03921568766236305" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Polygon fx:id="D" layoutX="559.0" layoutY="174.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 417.21014404296875, -5.0, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -286.8661804199219, -6.5, -266.5, 10.0" scaleX="0.5" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.05882352963089943" green="0.027450980618596077" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.03921568766236305" blue="0.03921568766236305" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Label fx:id="answerA" alignment="CENTER" layoutX="158.0" layoutY="96.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" text="Winston Churchill" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="answerD" alignment="CENTER" layoutX="505.0" layoutY="153.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" text="Question D" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="answerC" alignment="CENTER" layoutX="158.0" layoutY="153.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" text="Question C" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="answerB" alignment="CENTER" layoutX="505.0" layoutY="96.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" text="Question B" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="124.0" layoutY="95.0" text="A:" textFill="GOLD">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="477.0" layoutY="96.0" text="B:" textFill="GOLD">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="123.0" layoutY="153.0" text="C:" textFill="GOLD">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="476.0" layoutY="153.0" text="D:" textFill="GOLD">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="44.0" layoutY="14.0" prefHeight="94.0" prefWidth="825.0" style="-fx-background-color: #0f07ff#0f07ff;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="102.0" layoutX="-4.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="831.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.05882352963089943" green="0.027450980618596077" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.03921568766236305" blue="0.027450980618596077" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Rectangle>
+            <Label layoutX="244.0" layoutY="14.0" text="Question" textFill="GOLD">
+               <font>
+                  <Font size="56.0" />
+               </font>
+            </Label>
+            <Label fx:id="count" layoutX="465.0" layoutY="16.0" text="1" textFill="GOLD">
+               <font>
+                  <Font size="56.0" />
+               </font>
+            </Label>
+            <Polygon layoutX="599.0" layoutY="32.0" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 427.5, -4.0, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -290.5, -4.0, -266.5, 10.0" scaleX="0.4" scaleY="0.5" scaleZ="0.2" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.05882352963089943" green="0.027450980618596077" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.03921568766236305" blue="0.027450980618596077" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Polygon layoutX="599.0" layoutY="56.0" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 427.5, -4.0, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -290.5, -4.0, -266.5, 10.0" scaleX="0.4" scaleY="0.5" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="0.05882352963089943" green="0.027450980618596077" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03921568766236305" green="0.03921568766236305" blue="0.027450980618596077" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Polygon layoutX="599.0" layoutY="80.0" points="-239.5, 17.0, 379.5, 17.0, 402.5, 10.0, 427.5, -4.0, 402.5, -20.0, 379.5, -30.0, -239.5, -30.0, -266.5, -20.0, -290.5, -4.0, -266.5, 10.0" scaleX="0.4" scaleY="0.5" stroke="#979696" strokeType="INSIDE" strokeWidth="2.0">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.15800438821315765" green="0.12061403691768646" blue="0.8684210777282715" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="1.0" green="0.8833333253860474" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.40789473056793213" green="0.40789473056793213" blue="0.3418006896972656" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Polygon>
+            <Label layoutX="653.0" layoutY="65.0" />
+            <Label fx:id="currentWin" layoutX="653.0" layoutY="64.0" text="£1" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nextWin" layoutX="652.0" layoutY="41.0" text="£2" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="secondWin" layoutX="653.0" layoutY="17.0" text="£3" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#cate" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: purple;" text="Back to Category " textFill="GOLD" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="131.0" layoutY="13.0" mnemonicParsing="false" onAction="#menu" prefHeight="66.0" prefWidth="89.0" style="-fx-background-color: purple;" text="Back to Menu" textFill="GOLD" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="messagebox" layoutX="105.0" layoutY="144.0" opacity="0.83" prefHeight="200.0" prefWidth="705.0" style="-fx-background-color: gold;">
+         <children>
+            <Button fx:id="next" alignment="CENTER" contentDisplay="CENTER" layoutX="284.0" layoutY="149.0" mnemonicParsing="false" onMouseClicked="#QNA" text="Next Question ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" alignment="TOP_CENTER" layoutX="81.0" layoutY="6.0" prefHeight="144.0" prefWidth="544.0" text="Correct" textFill="RED" wrapText="true">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
