@@ -35,7 +35,6 @@ public class SceneController {
         root = loader.load();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("game.css").toExternalForm());
         stage.setScene(scene);
         stage.setTitle("Home");
         stage.setResizable(false);
