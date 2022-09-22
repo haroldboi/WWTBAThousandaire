@@ -33,8 +33,10 @@ public class HelloController {
     public void MU(ActionEvent event){
         if(Audio.muted)
             Audio.unmute();
-        else
+        else{
             Audio.mute();
+            sound.play();
+        }
         updateMute();
     }
     public void PP(ActionEvent event) {

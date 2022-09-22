@@ -1,6 +1,6 @@
 package com.example.quiz;
 
-import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -15,7 +15,7 @@ public class SceneController {
     private Parent root;
 
 
-    public void switchToMenu(ActionEvent event) throws IOException {
+    public void switchToMenu(Event event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
         Audio.sounds.clear();
         root = loader.load();
@@ -29,7 +29,7 @@ public class SceneController {
         stage.show();
     }
 
-    public void switchToHome(ActionEvent event) throws IOException {
+    public void switchToHome(Event event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("category.fxml"));
         Audio.sounds.clear();
         root = loader.load();
@@ -43,8 +43,11 @@ public class SceneController {
         stage.show();
     }
 
-    public void switchToGame(ActionEvent event,Integer category) throws IOException {
+    public void switchToGame(Event event,Integer category) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("game.fxml"));
+        for(Audio sound : Audio.sounds){
+            sound.stop();
+        }
         Audio.sounds.clear();
         root = loader.load();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
