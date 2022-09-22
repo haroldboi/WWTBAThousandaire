@@ -22,6 +22,11 @@
             <Image url="@images/1294335_wwtbam_uk_itv_s1_ep0_2018_unit_110_831172.jpeg" />
          </image>
       </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="390.0" layoutY="165.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/who-wants-to-be-a-millionaire-2014-millionaire-2017-game-show-quiz-png-favpng-2m4Df1YQMQgXq9Dx5emUdsehk.png" />
+         </image>
+      </ImageView>
       <Pane layoutX="4.0" layoutY="400.0" prefHeight="212.0" prefWidth="905.0">
          <children>
             <Line endX="113.5" endY="1.5" layoutX="793.0" layoutY="2.0" startX="1.7928466796875" startY="1.5" stroke="#979696" />
@@ -150,22 +155,22 @@
                   </RadialGradient>
                </fill>
             </Polygon>
-            <Label fx:id="answerA" alignment="TOP_LEFT" layoutX="154.0" layoutY="56.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Winston Churchill" textFill="WHITE">
+            <Label fx:id="answerA" alignment="TOP_LEFT" layoutX="154.0" layoutY="56.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Winston Churchill" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <Label fx:id="answerD" alignment="TOP_LEFT" layoutX="508.0" layoutY="135.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Question D" textFill="WHITE">
+            <Label fx:id="answerD" alignment="TOP_LEFT" layoutX="508.0" layoutY="135.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Question D" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <Label fx:id="answerC" alignment="TOP_LEFT" layoutX="154.0" layoutY="135.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Question C" textFill="WHITE">
+            <Label fx:id="answerC" alignment="TOP_LEFT" layoutX="154.0" layoutY="135.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Question C" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <Label fx:id="answerB" alignment="TOP_LEFT" layoutX="508.0" layoutY="56.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Question B" textFill="WHITE">
+            <Label fx:id="answerB" alignment="TOP_LEFT" layoutX="508.0" layoutY="56.0" onMouseClicked="#click" onMouseEntered="#hover" onMouseExited="#hoverleave" prefHeight="59.0" prefWidth="279.0" text="Question B" textFill="WHITE" wrapText="true">
                <font>
                   <Font size="17.0" />
                </font>
@@ -317,7 +322,7 @@
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="131.0" layoutY="13.0" mnemonicParsing="false" onAction="#menu" prefHeight="66.0" prefWidth="89.0" style="-fx-background-color: purple;" text="Back to Menu" textFill="GOLD" wrapText="true">
+            <Button fx:id="mute" alignment="CENTER" contentDisplay="CENTER" layoutX="133.0" layoutY="13.0" mnemonicParsing="false" onAction="#MM" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: purple;" text="Mute" textFill="GOLD" wrapText="true">
                <font>
                   <Font size="18.0" />
                </font>
@@ -340,7 +345,7 @@
       </Pane>
       <Pane layoutX="740.0" layoutY="140.0" prefHeight="200.0" prefWidth="160.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" height="135.0" layoutX="36.0" layoutY="33.0" stroke="#979696" strokeType="INSIDE" width="89.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="155.0" layoutX="36.0" layoutY="33.0" stroke="#979696" strokeType="INSIDE" width="89.0">
                <fill>
                   <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
                      <stops>
@@ -386,7 +391,7 @@
                   </RadialGradient>
                </fill>
             </Circle>
-            <Circle fx:id="second" layoutX="80.0" layoutY="127.0" radius="40.0" scaleY="0.66" stroke="BLACK" strokeType="INSIDE">
+            <Circle fx:id="second" layoutX="80.0" layoutY="154.0" radius="40.0" scaleY="0.66" stroke="BLACK" strokeType="INSIDE">
                <fill>
                   <RadialGradient centerX="0.5" centerY="0.519002375296912" focusAngle="135.0" focusDistance="-0.11560693641618491" radius="0.869942196531792">
                      <stops>
@@ -414,7 +419,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="97.0" onMouseClicked="#csecond50" onMouseEntered="#hsecond50" onMouseExited="#lsecond50" prefHeight="59.0" prefWidth="80.0" text="50/50" textFill="WHITE">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="41.0" layoutY="124.0" onMouseClicked="#csecond50" onMouseEntered="#hsecond50" onMouseExited="#lsecond50" prefHeight="59.0" prefWidth="80.0" text="50/50" textFill="WHITE">
                <font>
                   <Font size="20.0" />
                </font>

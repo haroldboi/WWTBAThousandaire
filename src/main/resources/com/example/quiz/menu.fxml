@@ -14,14 +14,24 @@
             <Image url="@images/who-wants-to-be-a-millionaire-2014-millionaire-2017-game-show-quiz-png-favpng-2m4Df1YQMQgXq9Dx5emUdsehk.png" />
          </image>
       </ImageView>
-      <Button id="start" alignment="CENTER" layoutX="372.0" layoutY="502.0" mnemonicParsing="false" onAction="#start" prefHeight="69.0" prefWidth="168.0" style="-fx-background-color: Gold;" styleClass="Button" text="Start">
+      <Button id="start" alignment="CENTER" layoutX="282.0" layoutY="502.0" mnemonicParsing="false" onAction="#start" prefHeight="69.0" prefWidth="168.0" style="-fx-background-color: Gold;" styleClass="Button" text="Start">
          <font>
             <Font name="System Bold" size="45.0" />
          </font>
          <effect>
             <DropShadow />
          </effect></Button>
-      <Button fx:id="pause" layoutX="781.0" layoutY="38.0" mnemonicParsing="false" onAction="#PP" text="Button" />
-      <Button fx:id="mute" layoutX="51.0" layoutY="39.0" mnemonicParsing="false" onAction="#MU" text="Button" />
+      <Button fx:id="mute" layoutX="103.0" layoutY="79.0" mnemonicParsing="false" onAction="#MU" style="-fx-background-color: gold;" text="Button">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button id="start" alignment="CENTER" layoutX="456.0" layoutY="502.0" mnemonicParsing="false" onAction="#quit" prefHeight="69.0" prefWidth="168.0" style="-fx-background-color: Gold;" styleClass="Button" text="Quit">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
    </children>
 </AnchorPane>

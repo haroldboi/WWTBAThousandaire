@@ -10,7 +10,7 @@ public class HelloController {
     private Audio sound;
     private Boolean paused = false;
 
-    @FXML Button mute,pause;
+    @FXML Button mute;
 
     public HelloController(){
         sound = new Audio("MainTheme.wav",0.3d);
@@ -26,26 +26,21 @@ public class HelloController {
     }
 
     public void updateMute(){
-        pause.setText( paused ? "play" : "pause");
         mute.setText(Audio.muted ? "unmute" : "mute");
     }
 
+    public void quit(ActionEvent event){
+        System.exit(0);
+    }
+
     public void MU(ActionEvent event){
-        if(Audio.muted)
+        if(Audio.muted){
             Audio.unmute();
+            sound.loop();}
         else{
             Audio.mute();
-            sound.play();
         }
         updateMute();
     }
-    public void PP(ActionEvent event) {
-        if(!Audio.muted){
-        if(!paused)
-            sound.pause();
-        else
-            sound.play();
-        paused = !paused;
-        updateMute();
-    }}
+
 }

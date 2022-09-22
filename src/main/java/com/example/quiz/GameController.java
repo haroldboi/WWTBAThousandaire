@@ -31,7 +31,7 @@ public class GameController {
     private Audio sound;
     @FXML Label answerC,answerD,currentWin,nextWin,secondWin,count,message,question,answerA,answerB;
     @FXML Pane messagebox;
-    @FXML Button next;
+    @FXML Button next,mute;
     @FXML Polygon A,B,C,D;
 
     @FXML Circle first,second;
@@ -39,12 +39,12 @@ public class GameController {
     public GameController(){
         sound = new Audio("game music.mp3",0.5d);
         sound.loop();
-        System.out.println("game started!");
     }
 
     public void questionM(int Category){
         Link link = new Link(Category);
         this.questions = link.makeObject();
+        mute.setText(Audio.muted ? "unmute":"mute");
         QNA();
     }
 
@@ -400,10 +400,17 @@ public class GameController {
         half();
         secondUsed = true;
     }}}
-    public void refresh(MouseEvent event)throws IOException{
 
+    public void MM(ActionEvent Event){
+        if(Audio.muted){
+            Audio.unmute();
+            sound.loop();
+        }
+        else{
+            Audio.mute();
+        }
+        mute.setText(Audio.muted ? "unmute":"mute");
     }
-
 
 }
 
