@@ -1,2 +1,2 @@
 # WWTBAThousandaire
-My quiz game made with 100% its pretty difficult good luck!
+My quiz game made with 100% Java its pretty difficult good luck!
